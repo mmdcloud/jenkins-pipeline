@@ -83,7 +83,7 @@ resource "aws_instance" "jenkins_instance" {
   instance_type = "t2.micro"
   ebs_optimized = false
   subnet_id = aws_subnet.public_subnets[0].id
-  key_name = "shiv.pem"
+  key_name = "shiv"
   user_data = filebase64("${path.module}/scripts/user_data.sh")
   vpc_security_group_ids = [aws_security_group.security_group.id]
   tags = {
