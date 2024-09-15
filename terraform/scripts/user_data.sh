@@ -5,6 +5,9 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 
+# Installing Java 17
+sudo apt install openjdk-17-jre-headless -y
+
 # Add Docker's official GPG key:
 sudo apt-get update -y
 sudo apt-get install ca-certificates curl -y
